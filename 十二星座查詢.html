@@ -2,8 +2,130 @@
 <html>
     <head>
         <meta charset="utf=8">
-        <title>十二星座運氣-十一月</title>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>University Website Design - Easy Tutorials</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Source+Sans+3&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Source+Sans+3&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    
+        <title>十二星座查詢</title>
 <body>
-<input type="date"/>
-</body>
+   
+
+        
+          <section class="header">
+            <nav>
+                <a href="index.html"><img  width="200" height="100" src="images/チャイ.png"></a>
+                <div class="nav-links" id="navLinks">
+                   <i class="fa fa-times-circle" onclick="hideMeun()"></i>
+                   
+                     <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="十二星座查詢.html">查詢你的星座</a></li>
+                        <li><a href="星座性格.html">星座性格</a></li>
+                        <li><a href="">12星座特點</a></li>
+                        <li><a href="">englsh</a></li>
+               </ul>
+               <i class="fa fa-bars" onclick="showMeun()"></i>
+                </div>
+                </nav>
+<div class="text-box">
+    <h1>查詢你的星座</h1>
+    <form>
+        <input type="number"id="x1"  min="1" max="12"><stan>月</stan>
+        <input type="number" id="x2" min="1" max="31"><stan>日</stan>
+        <br>
+        <button type='button'class="hero-btn" onclick="show()">查詢你的星座</button> 
+        <!-- <input type="submit"  name="submit" value="查詢你的星座"onclick="show()"/> -->
+         </form>   
+     </div>            
+      </section>
+    <script> 
+  
+        function show(){
+        var month=document.getElementById("x1").value;
+        var   day=document.getElementById("x2").value;
+            if(month==1){
+                if(day<21){
+                alert("摩羯座") ;
+               }else alert("水瓶座") ;
+            }
+            else if(month==2){
+            if(day<20){
+                alert("水瓶座") ;
+               }else alert("雙魚座") ;
+            }
+            else if(month==3){
+                if(day<21){
+                alert("雙魚座") ;
+               }else alert("牡羊座") ;
+            }
+            else if(month==4){
+                if(day<21){
+                alert("雙魚座") ;
+               }else alert("牡羊座") ;
+            }
+            else{
+                alert("error") ;
+            }
+
+
+            // case"4":
+            // if(day<21){
+            //     alert("牡羊座") ;
+            //    }else alert("金牛座") ;
+
+            // case"5":
+            // if(day<22){
+            //     alert("金牛座") ;
+            //    }else alert("雙子座") ;
+
+            // case"6":
+            // if(day<22){
+            //     alert("雙子座") ;
+            //    }else alert("巨蟹座") ;
+
+            // case"7":
+            // if(day<24){
+            //     alert("巨蟹座") ;
+            //    }else alert("獅子座") ;
+
+            // case"8":
+            // if(day<24){
+            //     alert("獅子座") ;
+            //    }else alert("處女座") ;
+
+            // case"9":
+            // if(day<24){
+            //     alert("處女座") ;
+            //    }else alert("天枰座") ;
+
+            // case"10"://
+            // if(day<24){
+            //     alert("天枰座") ;
+            //    }else alert("天蠍座") ;
+
+            // case"11":
+            // if(day<23){
+            //     alert("天蠍座") ;
+            //    }else alert("射手座") ;
+               
+            // case"12":
+            // if(day<23){
+            //     alert("射手座") ;
+            //    }else alert("摩羯座") ;
+      
+        // alert("hi");
+        }
+        </script>
+
 </head>
+
+</body>
+
+</html>
