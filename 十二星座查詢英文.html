@@ -24,25 +24,26 @@
                 <div class="nav-links" id="navLinks">
                    <i class="fa fa-times-circle" onclick="hideMeun()"></i>
                    
-                     <ul>
-                        <li><a href="index.html">首頁</a></li>
-                        <li><a href="十二星座查詢.html">查詢你的星座</a></li>
-                        <li><a href="星座性格.html">星座性格</a></li>
-                        <li><a href="合適伴侶.html">合適伴侶</a></li>
-                        <li><a href="index 英文.html">English</a></li>
-               </ul>
+               
+                   <ul>
+                    <li><a href="index 英文.html">front page</a></li>
+                    <li><a href="十二星座查詢英文.html">Check your constellation</a></li>
+                    <li><a href="星座性格英文.html">Constellation character</a></li>
+                    <li><a href="合適伴侶 英文.html">Suitable partner</a></li>
+                    <li><a href="index.html">中文</a></li>
+           </ul>
                <i class="fa fa-bars" onclick="showMeun()"></i>
                 </div>
                 </nav>
 <div class="text-box">
-    <h1>查詢你的星座</h1>
+    <h1>Check your constellation</h1>
     <form>
      
-        <input type="number"id="x1"  min="1" max="12" style="opacity:0.5;"><stan>月</stan>
-        <input type="number" id="x2" min="1" max="31" style="opacity:0.5;"><stan>日</stan>
+        <input type="number"id="x1"  min="1" max="12" style="opacity:0.5;"><stan>month</stan>
+        <input type="number" id="x2" min="1" max="31" style="opacity:0.5;"><stan>day</stan>
    
         <br>
-        <button type='button'class="hero-btn" onclick="show()">看看你的星座</button> 
+        <button type='button'class="hero-btn" onclick="show()">Look at your constellations</button> 
         <!-- <input type="submit"  name="submit" value="查詢你的星座"onclick="show()"/> -->
          </form>   
      </div>            
@@ -52,76 +53,76 @@
         function show(){
         var month=document.getElementById("x1").value;
         var   day=document.getElementById("x2").value;
-            if(month==1){
+        if(month==1){
                 if(day<21){
-                alert("摩羯座") ;
-               }else alert("水瓶座") ;
+                alert("Capricorn");
+               }else alert("Aquarius");
             }
             else if(month==2){
             if(day<20){
-                alert("水瓶座") ;
-               }else alert("雙魚座") ;
+                alert("Aquarius");
+               }else alert("Pisces");
             }
             else if(month==3){
                 if(day<21){
-                alert("雙魚座") ;
-               }else alert("牡羊座") ;
+                alert("Pisces");
+               }else alert("Aries");
             }
             else if(month==4){
                 if(day<21){
-                alert("雙魚座") ;
-               }else alert("牡羊座") ;
+                alert("Pisces");
+               }else alert("Aries");
             }
            
 
             else if(month==5){
             if(day<22){
-                alert("金牛座") ;
-               }else alert("雙子座") ;}
+                alert("Taurus");
+               }else alert("Gemini") ;}
 
     
             else if(month==6){
             if(day<22){
-                alert("雙子座") ;
-               }else alert("巨蟹座") ;}
+                alert("Gemini");
+               }else alert("Cancer") ;}
 
           
             else if(month==7){
             if(day<24){
-                alert("巨蟹座") ;
-               }else alert("獅子座") ;}
+                alert("Cancer");
+               }else alert("Leo") ;}
 
            
             else if(month==8){
             if(day<24){
-                alert("獅子座") ;
-               }else alert("處女座") ;}
+                alert("Leo");
+               }else alert("Virgo") ;}
 
            
             else if(month==9){
             if(day<24){
-                alert("處女座") ;
-               }else alert("天枰座") ;}
+                alert("Virgo");
+               }else alert("Libra") ;}
 
           
             else if(month==9){
             if(day<24){
-                alert("天枰座") ;
-               }else alert("天蠍座") ;}
+                alert("Libra");
+               }else alert("Scorpio") ;}
 
        
             else if(month==11){
             if(day<23){
-                alert("天蠍座") ;
-               }else alert("射手座") ;}
+                alert("Scorpio");
+               }else alert("Sagittarius") ;}
          
             else if(month==12){
             if(day<23){
-                alert("射手座") ;
-               }else alert("摩羯座") ;}
+                alert("Sagittarius");
+               }else alert("Capricorn") ;}
 
                else{
-                alert("error") ;
+                alert("error");
             }
    
         }
